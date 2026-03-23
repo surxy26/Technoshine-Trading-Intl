@@ -16,17 +16,18 @@ function About() {
           <Reveal>
             <SectionTitle
               eyebrow="Who We Are"
-              title="A practical partner for industrial supply and infrastructure projects"
-              text="Our company focuses on dependable production quality, responsive support, and long-term value for clients across public and private sector projects."
+              title="Technoshine Trading International"
+              text="A pioneering company in the field of road safety solutions, committed to delivering innovative and sustainable products to enhance safety on our roadways."
             />
+
             <p className="mt-6 text-slate-600 leading-8">
-              From manufacturing coordination to shipment preparation, we work to keep product standards high and project requirements clear. Our goal is simple: deliver reliable systems and help clients move faster with confidence.
+              As a dedicated and forward-thinking company, we take pride in introducing cutting-edge technologies aimed at transforming the landscape of road safety. At the heart of our innovation lies the commitment to creating safer roadways for everyone. At Technoshine, we believe in the power of innovation to address the pressing challenges of road safety.
             </p>
           </Reveal>
 
           <Reveal delay={0.1}>
             <img
-              src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80"
+              src="src/assets/about/tech_about.jpg"
               alt="About factory"
               className="h-[500px] w-full rounded-[2rem] object-cover shadow-lg"
             />
@@ -35,16 +36,16 @@ function About() {
       </section>
 
       <section className="page-padding">
-        <div className="container-shell grid gap-6 md:grid-cols-3">
+        <div className="container-shell grid gap-6 md:grid-cols-3 items-stretch">
           {[
-            ["Mission", "Deliver industrial products with quality, consistency, and professional project support."],
-            ["Vision", "Be a trusted product source for infrastructure and industrial applications across multiple markets."],
-            ["Value", "We prioritize reliability, responsiveness, technical clarity, and long-term client trust."],
+            ["Mission", "To revolutionize the way we approach and enhance safety on our roads."],
+            ["Vision", "To contribute to a brighter and sustainable future through innovative solutions."],
+            ["Value", "We are committed to innovation, safety, sustainability, and excellence in road solutions."],
           ].map(([title, text], index) => (
             <Reveal key={title} delay={index * 0.08}>
-              <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200">
-                <h3 className="text-2xl font-bold">{title}</h3>
-                <p className="mt-4 text-slate-600 leading-7">{text}</p>
+              <div className="h-full rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200 flex flex-col">
+                <h3 className="text-2xl font-bold mb-4">{title}</h3>
+                <p className="text-slate-600 leading-7 flex-grow">{text}</p>
               </div>
             </Reveal>
           ))}

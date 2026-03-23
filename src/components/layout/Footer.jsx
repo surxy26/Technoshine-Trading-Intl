@@ -1,37 +1,57 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/techno_logo.png";
 
 function Footer() {
   return (
     <footer className="mt-20 bg-slate-950 text-slate-300">
       <div className="container-shell grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+        
+        {/* LOGO + BRAND */}
         <div>
-          <h3 className="text-xl font-bold text-white">TECHNOSHINE</h3>
-          <p className="mt-4 text-sm leading-7 text-slate-400">
+          <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Technoshine Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <div className="leading-none">
+              <p className="text-lg font-extrabold text-white">
+                TECHNOSHINE
+              </p>
+              <p className="text-[9px] uppercase tracking-[0.35em] text-slate-400">
+                TRADING INTERNATIONAL
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-5 text-sm leading-7 text-slate-400">
             Reliable industrial product supply with modern production standards, export-ready service,
             and strong project support.
           </p>
         </div>
 
+        {/* QUICK LINKS */}
         <div>
           <h4 className="font-semibold text-white">Quick Links</h4>
           <div className="mt-4 flex flex-col gap-3 text-sm">
             <Link to="/about">About</Link>
             <Link to="/products">Products</Link>
-            <Link to="/cases">Cases</Link>
+            <Link to="/cases">Gallery</Link>
             <Link to="/contact">Contact</Link>
           </div>
         </div>
 
+        {/* PRODUCTS */}
         <div>
           <h4 className="font-semibold text-white">Products</h4>
           <div className="mt-4 flex flex-col gap-3 text-sm">
-            <p>W Beam Guardrail</p>
-            <p>Thrie Beam Guardrail</p>
-            <p>Steel Posts</p>
-            <p>Accessories</p>
+            <p>Solar Road Studs Installation</p>
+            <p>Steel Roller Guardrail Installation</p>
+            <p>Integrated Solar Streetlight</p>
           </div>
         </div>
 
+        {/* CONTACT */}
         <div>
           <h4 className="font-semibold text-white">Contact</h4>
           <div className="mt-4 space-y-3 text-sm text-slate-400">
