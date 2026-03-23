@@ -5,10 +5,10 @@ import About from "../pages/About";
 import Products from "../pages/Products";
 import ProductDetail from "../pages/ProductDetail";
 import Cases from "../pages/Cases";
-import News from "../pages/News";
+// import News from "../pages/News";
 import FAQ from "../pages/FAQ";
 import Contact from "../pages/Contact";
-import TechnicalSupport from "../pages/TechnicalSupport";
+// import TechnicalSupport from "../pages/TechnicalSupport";
 import NotFound from "../pages/NotFound";
 
 function AppRouter() {
@@ -20,11 +20,9 @@ function AppRouter() {
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
           <Route path="products/:slug" element={<ProductDetail />} />
-          <Route path="cases" element={<Cases />} />
-          <Route path="news" element={<News />} />
+          <Route path="gallery" element={<Cases />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="technical-support" element={<TechnicalSupport />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
