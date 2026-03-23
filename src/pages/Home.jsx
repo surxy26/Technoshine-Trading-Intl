@@ -123,13 +123,13 @@ function Home() {
       <section className="page-padding">
         <div className="container-shell">
           <SectionTitle
-            eyebrow="Case Studies"
+            eyebrow="Gallery"
             title="Projects backed by quality delivery and industrial performance"
             text="A sample of project environments where our product systems are applied."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {cases.map((item, index) => (
+            {cases.slice(0, 3).map((item, index) => (
               <Reveal key={item.title} delay={index * 0.1}>
                 <article className="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl">
                   <img
@@ -149,48 +149,6 @@ function Home() {
                 </article>
               </Reveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-950 py-20 text-white">
-        <div className="container-shell">
-          <SectionTitle
-            eyebrow="Latest News"
-            title="Insights, product updates, and project guidance"
-            text="Useful articles that help clients understand product quality, selection, and project support."
-          />
-
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {news.map((item, index) => (
-              <Reveal key={item.slug} delay={index * 0.1}>
-                <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-sm">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="h-60 w-full object-cover"
-                  />
-                  <div className="p-6">
-                    <p className="text-xs uppercase tracking-[0.25em] text-orange-300">
-                      {item.date}
-                    </p>
-                    <h3 className="mt-3 text-xl font-bold">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-7 text-slate-300">
-                      {item.excerpt}
-                    </p>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-
-          <div className="mt-10">
-            <Link
-              to="/news"
-              className="text-sm font-semibold text-orange-300 hover:text-orange-200"
-            >
-              View all articles →
-            </Link>
           </div>
         </div>
       </section>
