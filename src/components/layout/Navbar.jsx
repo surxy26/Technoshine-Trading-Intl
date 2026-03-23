@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../assets/techno_logo.png";
 
 const links = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Products", path: "/products" },
-  { name: "Cases", path: "/cases" },
-  { name: "News", path: "/news" },
-  { name: "Technical", path: "/technical-support" },
+  { name: "Gallery", path: "/cases" },
   { name: "FAQ", path: "/faq" },
   { name: "Contact", path: "/contact" },
 ];
@@ -20,13 +19,18 @@ function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-lg">
       <div className="container-shell flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-3">
-          <div className="grid h-11 w-11 place-items-center rounded-2xl bg-orange-500 font-bold text-white shadow-lg shadow-orange-500/20">
-            TS
-          </div>
-          <div>
-            <p className="text-lg font-extrabold tracking-tight">TECHNOSHINE</p>
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
-              Industrial Systems
+          <img
+            src={logo}
+            alt="Technoshine Logo"
+            className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+          />
+
+          <div className="leading-none">
+            <p className="text-xl font-extrabold tracking-tight text-slate-900">
+              TECHNOSHINE
+            </p>
+            <p className="mt-1 text-[9px] uppercase tracking-[0.38em] text-slate-500 sm:text-[10px]">
+              TRADING INTERNATIONAL
             </p>
           </div>
         </Link>

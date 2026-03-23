@@ -21,10 +21,8 @@ function AppRouter() {
           <Route path="products" element={<Products />} />
           <Route path="products/:slug" element={<ProductDetail />} />
           <Route path="cases" element={<Cases />} />
-          <Route path="news" element={<News />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="technical-support" element={<TechnicalSupport />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

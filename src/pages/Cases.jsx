@@ -7,7 +7,7 @@ function Cases() {
   return (
     <>
       <PageBanner
-        title="Case Studies"
+        title="Our Gallery"
         subtitle="Selected project environments where our industrial products support safety, structure, and performance."
         image="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1600&q=80"
       />
