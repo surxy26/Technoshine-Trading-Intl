@@ -45,10 +45,9 @@ function Footer() {
         <div>
           <h4 className="font-semibold text-white">Products</h4>
           <div className="mt-4 flex flex-col gap-3 text-sm">
-            <p>W Beam Guardrail</p>
-            <p>Thrie Beam Guardrail</p>
-            <p>Steel Posts</p>
-            <p>Accessories</p>
+            <p>Solar Road Studs Installation</p>
+            <p>Steel Roller Guardrail Installation</p>
+            <p>Integrated Solar Streetlight</p>
           </div>
         </div>
 
